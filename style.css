@@ -1,0 +1,13 @@
+main a {
+  color: #edeada;
+  font-size: 20px;
+  padding: .2em 1em;
+  background: var(--main-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #ccc;
+
+}
+main a:hover,  
+main a:focus  {
+  filter: brightness(150%);
+}

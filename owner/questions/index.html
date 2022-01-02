@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner page</title>
+
+  
+  <link rel="stylesheet" href="../../reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body dir="rtl">
+
+  <h1 class="header text-center">Owner</h1>
+  
+  <main>
+
+    <form action="">
+      <div class="input-group">
+        <label for="q">السؤال</label>
+        <input id="q">
+      </div>
+      <div id="list"></div>
+      <button  class="btn" onclick="add_answer()" type="button">Add Answer</button>
+
+      <input class="btn" type="submit" /> 
+    </form>
+  </main>
+
+  <script>
+    const list = document.getElementById('list')
+    var n = 0
+
+    function add_answer(){
+
+      list.innerHTML += `
+        <div class="mt-2 input-group">
+          <label for="a${n}">الاجابه</label>
+          <input id="a${n}" name="a${n}" />
+          <input type="radio" name='correct' value="a${n}" title="الاجابه الصحيحه" />
+        </div>
+      `
+      n++
+    }
+
+     add_answer()
+
+  </script>
+</body>
+</html>

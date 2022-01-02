@@ -1,0 +1,29 @@
+form {
+  min-width: 350px;
+  padding: 10px;
+  text-align: center;
+  /* margin: auto; */
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+form  * {
+  display: block;
+  margin: 1em auto;
+}
+
+
+form input[type=submit] {
+  color: #eee;
+  border: none;
+  padding: 0.5em 1em;
+  background:var(--main-color);
+  cursor: pointer ;
+}
+
+form input[type=submit]:hover, 
+form input[type=submit]:focus 
+{
+  filter: brightness(150%);
+}
